@@ -1,0 +1,282 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{464C4F38-7A6F-4645-B1AC-371542230510}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML5weB</RootNamespace>
+    <AssemblyName>HTML5weB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44312</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blog-details.html" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\revicons\index.php" />
+    <Content Include="fonts\revicons\revicons.svg" />
+    <Content Include="images\blog\1.jpg" />
+    <Content Include="images\blog\10.jpg" />
+    <Content Include="images\blog\11.jpg" />
+    <Content Include="images\blog\12.jpg" />
+    <Content Include="images\blog\13.jpg" />
+    <Content Include="images\blog\2.jpg" />
+    <Content Include="images\blog\3.jpg" />
+    <Content Include="images\blog\4.jpg" />
+    <Content Include="images\blog\5.jpg" />
+    <Content Include="images\blog\6.jpg" />
+    <Content Include="images\blog\7.jpg" />
+    <Content Include="images\blog\8.jpg" />
+    <Content Include="images\blog\9.jpg" />
+    <Content Include="images\fav-icon\icon.png" />
+    <Content Include="images\Fotograflar\Asp.net.jpg" />
+    <Content Include="images\Fotograflar\C#.jpg" />
+    <Content Include="images\Fotograflar\CSS.jpg" />
+    <Content Include="images\Fotograflar\html5.jpg" />
+    <Content Include="images\Fotograflar\JavaScript.jpg" />
+    <Content Include="images\Fotograflar\mssql.jpg" />
+    <Content Include="images\home\1.jpg" />
+    <Content Include="images\home\2.jpg" />
+    <Content Include="images\home\c1.jpg" />
+    <Content Include="images\home\c2.jpg" />
+    <Content Include="images\home\c3.jpg" />
+    <Content Include="images\home\slide-1.jpg" />
+    <Content Include="images\home\slide-2.jpg" />
+    <Content Include="images\inner-page\1.jpg" />
+    <Content Include="images\logo\logo.png" />
+    <Content Include="images\logo\map.png" />
+    <Content Include="images\logo\p1.png" />
+    <Content Include="images\logo\p2.png" />
+    <Content Include="images\logo\p3.png" />
+    <Content Include="images\logo\p4.png" />
+    <Content Include="images\logo\p5.png" />
+    <Content Include="images\project\1.jpg" />
+    <Content Include="images\project\2.jpg" />
+    <Content Include="images\project\3.jpg" />
+    <Content Include="images\project\4.jpg" />
+    <Content Include="images\project\5.jpg" />
+    <Content Include="images\project\6.jpg" />
+    <Content Include="images\project\7.jpg" />
+    <Content Include="images\project\8.jpg" />
+    <Content Include="images\project\9.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="inc\sendemail.php" />
+    <Content Include="index.html" />
+    <Content Include="js\map-script.js" />
+    <Content Include="js\theme.js" />
+    <Content Include="vendor\bootstrap\bootstrap-theme.css" />
+    <Content Include="vendor\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="vendor\bootstrap\bootstrap.css" />
+    <Content Include="vendor\bootstrap\bootstrap.js" />
+    <Content Include="vendor\bootstrap\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="vendor\contact-form\jquery.form.js" />
+    <Content Include="vendor\contact-form\validate.js" />
+    <Content Include="vendor\fancy-box\fancybox_loading.gif" />
+    <Content Include="vendor\fancy-box\fancybox_overlay.png" />
+    <Content Include="vendor\fancy-box\fancybox_sprite.png" />
+    <Content Include="vendor\fancy-box\jquery.fancybox-media.js" />
+    <Content Include="vendor\fancy-box\jquery.fancybox.css" />
+    <Content Include="vendor\fancy-box\jquery.fancybox.pack.js" />
+    <Content Include="vendor\gmaps.min.js" />
+    <Content Include="vendor\hover.css" />
+    <Content Include="vendor\html5shiv.js" />
+    <Content Include="vendor\jquery.2.2.3.min.js" />
+    <Content Include="vendor\jquery.mixitup.min.js" />
+    <Content Include="vendor\monthly-master\css\monthly.css" />
+    <Content Include="vendor\monthly-master\js\jquery.js" />
+    <Content Include="vendor\monthly-master\js\monthly.js" />
+    <Content Include="vendor\owl-carousel\owl.carousel.css" />
+    <Content Include="vendor\owl-carousel\owl.carousel.min.js" />
+    <Content Include="vendor\owl-carousel\owl.theme.css" />
+    <Content Include="vendor\respond.js" />
+    <Content Include="vendor\revolution\jquery.themepunch.revolution.min.js" />
+    <Content Include="vendor\revolution\jquery.themepunch.tools.min.js" />
+    <Content Include="vendor\revolution\layers.css" />
+    <Content Include="vendor\revolution\navigation.css" />
+    <Content Include="vendor\revolution\revolution.extension.actions.min.js" />
+    <Content Include="vendor\revolution\revolution.extension.kenburn.min.js" />
+    <Content Include="vendor\revolution\revolution.extension.layeranimation.min.js" />
+    <Content Include="vendor\revolution\revolution.extension.navigation.min.js" />
+    <Content Include="vendor\revolution\revolution.extension.slideanims.min.js" />
+    <Content Include="vendor\revolution\revolution.extension.video.min.js" />
+    <Content Include="vendor\revolution\settings.css" />
+    <Content Include="vendor\skills-master\jquery.skills.js" />
+    <Content Include="vendor\skills-master\source\animate.css" />
+    <Content Include="vendor\skills-master\source\habilidades.css" />
+    <Content Include="vendor\skills-master\test_page.html" />
+    <Content Include="vendor\WOW-master\css\libs\animate.css" />
+    <Content Include="vendor\WOW-master\css\site.css" />
+    <Content Include="video\drinkwinecover.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome\less\animated.less" />
+    <Content Include="fonts\font-awesome\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome\less\core.less" />
+    <Content Include="fonts\font-awesome\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome\less\icons.less" />
+    <Content Include="fonts\font-awesome\less\larger.less" />
+    <Content Include="fonts\font-awesome\less\list.less" />
+    <Content Include="fonts\font-awesome\less\mixins.less" />
+    <Content Include="fonts\font-awesome\less\path.less" />
+    <Content Include="fonts\font-awesome\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome\less\stacked.less" />
+    <Content Include="fonts\font-awesome\less\variables.less" />
+    <Content Include="fonts\font-awesome\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome\scss\_core.scss" />
+    <Content Include="fonts\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome\scss\_list.scss" />
+    <Content Include="fonts\font-awesome\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome\scss\_path.scss" />
+    <Content Include="fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome\scss\_variables.scss" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\revicons\revicons.eot" />
+    <Content Include="fonts\revicons\revicons.ttf" />
+    <Content Include="fonts\revicons\revicons.woff" />
+    <Content Include="inc\error_log" />
+    <None Include="packages.config" />
+    <Content Include="vendor\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="vendor\bootstrap\bootstrap.css.map" />
+    <Content Include="vendor\skills-master\README.md" />
+    <Content Include="video\.DS_Store" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56027</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44312/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
